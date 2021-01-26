@@ -14,6 +14,7 @@ open class NickyapiApplication :CommandLineRunner{
 
 	override fun run(vararg args: String?) {
 		val sandwichDeMila = ItemCarta("Mila de Carne",0,250, arrayOf("Tomate", "Lechuga", "Jamon"))
+		itemsRepository!!.save(sandwichDeMila)
 	}
 
 }
