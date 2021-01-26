@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class NickyapiApplication :CommandLineRunner{
+open class NickyapiApplication :CommandLineRunner{
 	@Autowired
 	val itemsRepository : ItemsRepository? = null
 
