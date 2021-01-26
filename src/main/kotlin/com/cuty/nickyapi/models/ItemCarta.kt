@@ -4,9 +4,9 @@ import javax.persistence.*
 
 @Entity
 @Table(name = "items")
-data class ItemCarta(
+class ItemCarta(
     @Column(length=5000)val nombreItemCarta : String,
-    @Id  @GeneratedValue var id : Int = 1,
     @Column val precio : Int,
-    @Column val ingredientes : String
+    @Column val ingredientes : String,
+    @Id  @GeneratedValue var id : Int
 )

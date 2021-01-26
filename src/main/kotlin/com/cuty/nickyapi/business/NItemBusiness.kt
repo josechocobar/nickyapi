@@ -3,11 +3,13 @@ package com.cuty.nickyapi.business
 import com.cuty.nickyapi.dao.ItemsRepository
 import com.cuty.nickyapi.exceptions.BusinessException
 import com.cuty.nickyapi.models.ItemCarta
-import com.robchoco.demo.exception.NotFoundException
+import com.cuty.nickyapi.exceptions.NotFoundException
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Service
 import java.util.*
 import kotlin.jvm.Throws
 
+@Service
 class NItemBusiness : ItemsBusiness {
 
     @Autowired
