@@ -8,13 +8,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-open class NickyapiApplication :CommandLineRunner{
+class NickyapiApplication :CommandLineRunner{
 	@Autowired
 	val itemsRepository : ItemsRepository? = null
 
 	override fun run(vararg args: String?) {
-		val sandwichDeMila = ItemCarta("Mila de Carne",0,250, listOf("Tomate", "Lechuga", "Jamon"))
-		itemsRepository!!.save(sandwichDeMila)
+		//val sandwichDeMila = ItemCarta("Mila de Carne",0,250, listOf("Tomate", "Lechuga", "Jamon"))
+		//itemsRepository!!.save(sandwichDeMila)
 	}
 
 }
