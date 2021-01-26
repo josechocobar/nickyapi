@@ -13,8 +13,8 @@ class NickyapiApplication :CommandLineRunner{
 	val itemsRepository : ItemsRepository? = null
 
 	override fun run(vararg args: String?) {
-		//val sandwichDeMila = ItemCarta("Mila de Carne",0,250, listOf("Tomate", "Lechuga", "Jamon"))
-		//itemsRepository!!.save(sandwichDeMila)
+		val sandwichDeMila = ItemCarta("Mila de Carne",0,250, ("Tomate/Lechuga/Jamon"))
+		itemsRepository!!.save(sandwichDeMila)
 	}
 
 }
