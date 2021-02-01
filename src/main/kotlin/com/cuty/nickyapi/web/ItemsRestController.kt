@@ -58,6 +58,18 @@ class ItemsRestController {
             ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR)
         }
     }
+    @DeleteMapping("/{id}")
+    fun delete(@PathVariable("id") idItemCarta: Int): ResponseEntity<Any> {
+        return try {
+            itemsBusiness?.remove(idItemCarta)
+            ResponseEntity(HttpStatus.OK)
+        }catch (e:BusinessException){
+            ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR)
+        }catch (e:NotFoundException){
+            ResponseEntity(HttpStatus.NOT_FOUND)
+        }
+    }
+
 
 
 
