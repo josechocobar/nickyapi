@@ -18,6 +18,10 @@ class NickyapiApplication :CommandLineRunner{
 	override fun run(vararg args: String?) {
 		val sandwichDeMila = ItemCarta(nombreItemCarta = "Mila de Carne",precio = 250, ingredientes = "Tomate/Lechuga/Jamon",id = 0, imagen = "https://image.shutterstock.com/image-photo/two-fresh-submarine-sandwiches-ham-260nw-497930494.jpg")
 		itemsRepository!!.save(sandwichDeMila)
+		val itemCarta = ItemCarta(imagen = "https://pasteboard.co/JMSaykT.jpg", nombreItemCarta = "Hamburguesa",precio = 310, ingredientes = "jamon/queso/lechuga/tomate", id = 0)
+		itemsRepository!!.save(itemCarta)
+
+
 	}
 
 }
