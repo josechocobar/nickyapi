@@ -21,7 +21,7 @@ class NickyapiApplication :CommandLineRunner{
 		var itemCarta = ItemCarta(imagen = "https://capsulajr.com/wp-content/uploads/2021/02/hamburguesa.jpg", nombreItemCarta = "Hamburguesa",precio = 310, ingredientes = "jamon/queso/lechuga/tomate", id = 0)
 		itemsRepository!!.save(itemCarta)
 		itemCarta = ItemCarta(nombreItemCarta = "pizza especial", precio = 250, ingredientes = "masa, salsa de tomate, queso, jamon, aceitunas, aji", imagen = "https://capsulajr.com/wp-content/uploads/2021/03/pizza_especial.jpg",id = 0)
-
+		itemsRepository!!.save(itemCarta)
 
 	}
 
