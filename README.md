@@ -22,9 +22,9 @@
 ## A futuro
 <br/>
 
-#### _Se agregará una base de satos sql y se subirá a un servidor linux.
+#### _Se agregará una base de datos sql y se subirá a un servidor linux.
 
 <br/>
 
 
-#### _Se agregará un panel de control para la edicion y la adición de productos.
+#### _Se agregará un panel de control para la edición y la adición de productos.
